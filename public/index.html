@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <title>Battleship</title>
+  <!-- external css  -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway|Shrikhand" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- App css -->
+  <link rel="stylesheet" href="/styles/grids.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/ships.css" type="text/css" />
+
+  <!-- external JS -->
+  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+  <!-- App JS -->
+  <script type="text/javascript" src = "/scripts/app.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <button class="new-game">new game</button>
+    <h1 class="title">Battleship</h1>
+    <button class="start-game">start game</button>
+  </header>
+
+  <main class="container">
+
+    <div class="grid-container">
+      <div class="rounded-container grid my-grid">
+        <h6 class="container-name">my board</h6>
+      </div>
+      <div class="rounded-container grid enemy-grid hidden">
+        <h6 class="container-name">enemy board</h6>
+      </div>
+      <div class="rounded-container all-ships">
+        <h6 class="container-name">ships</h6>
+      </div>
+    </div>
+
+  </main>
+
+
+</body>
+
+</html>
