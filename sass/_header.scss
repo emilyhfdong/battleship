@@ -1,0 +1,29 @@
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: $ltGrey;
+  height: 80px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .title {
+    font-family: 'Shrikhand', cursive;
+    color: $dkPurple;
+  }
+  button {
+    margin: 50px;
+    border-radius: 5px;
+    height: 30px;
+    background-color: $ltPurple;
+    color: white;
+    opacity: 0.6;
+    font-family: 'Raleway', sans-serif;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+

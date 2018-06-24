@@ -1,26 +1,26 @@
-.grid-container {
+/*.grid-container {
   display: flex;
   justify-content: center;
-}
+}*/
 
 
-.grid .row {
+/*.grid .row {
   display: flex;
   flex-direction: row;
-}
+}*/
 
-.grid .grey-box {
+/*.grid .grey-box {
   background-color: #EEEEEE;
-}
+}*/
 
-.rounded-container .container-name {
+/*.rounded-container .container-name {
   margin-top: 0;
   margin-bottom: 10px;
   color: darkgrey;
   font-size: 15px;
-}
+}*/
 
-body .hidden {
+/*body .hidden {
   display: none;
 }
 
@@ -41,6 +41,6 @@ body .rounded-container {
   padding: 40px;
   padding-top: 20px;
   text-align: center;
-}
+}*/
 
 
