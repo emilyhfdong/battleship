@@ -1,0 +1,34 @@
+.box {
+  height: 30px;
+  width: 30px;
+  margin: 0.5px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  &.grey-box {
+    background-color: $ltGrey;
+  }
+  &.carrier {
+    background-color: $ltRed;
+  }
+  &.battleship {
+    background-color: $ltOrange;
+  }
+  &.cruiser {
+    background-color: $ltYellow;
+  }
+  &.submarine {
+    background-color: $ltGreen;
+  }
+  &.destroyer {
+    background-color: $ltBlue;
+  }
+  &.hit-box {
+    background-color: red;
+  }
+  &.miss-box {
+    background-color: gray;
+  }
+}

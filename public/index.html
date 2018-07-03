@@ -7,18 +7,19 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- App css -->
-<!--   <link rel="stylesheet" href="/styles/grids.css" type="text/css" />
-  <link rel="stylesheet" href="/styles/header.css" type="text/css" />
-  <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
-  <link rel="stylesheet" href="/styles/ships.css" type="text/css" />
- -->
   <link rel="stylesheet" href="main.css" type="text/css" />
 
   <!-- external JS -->
   <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
   <!-- App JS -->
-  <script type="text/javascript" src = "/scripts/app.js"></script>
+  <script type="text/javascript" src = "/scripts/create-grids.js"></script>
+  <script type="text/javascript" src = "/scripts/drag-ships.js"></script>
+  <script type="text/javascript" src = "/scripts/start-game.js"></script>
+  <script type="text/javascript" src = "/scripts/play-game.js"></script>
+
+
+
 </head>
 
 <body>
@@ -39,8 +40,14 @@
         <h6 class="container-name">enemy board</h6>
       </div>
       <div class="rounded-container all-ships">
-        <h6 class="container-name">ships</h6>
+        <h6 class="container-name">
+          ships <button class="reset-ships"><i class="fa fa-refresh"></i></button>
+        </h6>
+        <div class="place-ship-errors"></div>
       </div>
+    </div>
+    <div class="instructions hidden">
+      <p>Click on the enemy board to fire!</p>
     </div>
 
   </main>

@@ -7,51 +7,6 @@ $(document).ready(function(){
     destroyer: 2
   }
 
-
-  function createGrid(gridClass) {
-    let $box = $("<div class='box grey-box'></div>");
-
-    for (let i = 0; i < 10; i ++ ) {
-      let $row = $(`<div class='row'></div>`);
-      for (let j = 0; j < 10; j ++ ) {
-        $row.append($box.clone().attr("data-x", j).attr("data-y", i));
-      }
-      $(gridClass).append($row)
-    }
-  }
-
-  createGrid(".my-grid");
-  createGrid(".enemy-grid");
-
-
-
-  function makeShips (shipName) {
-    let $box = $("<div class='box'></div>");
-    let $ship = $(`
-      <div class='ship'>
-        <textarea class="xPos" placeholder="x"></textarea>
-        <textarea class="yPos" placeholder="y"></textarea>
-        <button class="go">
-          <p>place ship</p>
-        </button>
-      </div>`);
-    for (let i = 0; i < shipLengths[shipName]; i ++ ) {
-      $ship.append($box.clone().addClass(shipName)).attr("shipName", shipName);
-    }
-
-
-    return $ship;
-  }
-
-  function loadShips () {
-    for (ship in shipLengths) {
-      $errors = $("<div class='errors'></div>")
-      $(".grid-container .all-ships").append(makeShips(ship)).append($errors);
-    }
-  }
-
-  loadShips();
-
   // when ship is double clicked, it rotates 90 deg
   $(".all-ships .ship").dblclick(function(ev) {
     $(this).toggleClass("vertical-ship");
