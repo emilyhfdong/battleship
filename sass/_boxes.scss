@@ -7,6 +7,9 @@
   align-items: center;
   justify-content: center;
   opacity: 1;
+  &.label {
+    color: darkgrey;
+  }
   &.grey-box {
     background-color: $ltGrey;
   }
@@ -27,8 +30,10 @@
   }
   &.hit-box {
     background-color: red;
+    opacity: 0.5;
   }
   &.miss-box {
     background-color: gray;
+    opacity: 0.5;
   }
 }

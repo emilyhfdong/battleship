@@ -13,7 +13,8 @@ $(document).ready(function(){
     } else {
       $(".grid-container .enemy-grid").removeClass("hidden");
       $(".grid-container .all-ships").addClass("hidden");
-      $(".instructions").removeClass("hidden")
+      $(".instructions").removeClass("hidden");
+      $(".ship-lists").removeClass("hidden");
     }
   });
 

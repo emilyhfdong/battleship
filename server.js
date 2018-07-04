@@ -5,7 +5,6 @@ const PORT = 8080; // default port 8080
 const nodeSassMiddleware = require('node-sass-middleware');
 const path = require('path');
 
-const shipFunctions = require("./shipFunctions.js");
 
 app.use(nodeSassMiddleware({
     src: path.join(__dirname, 'sass'),

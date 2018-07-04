@@ -18,6 +18,27 @@ $(document).ready(function(){
       $(gridClass).append($row)
     }
   }
+
+  function createRowLabels(gridClass) {
+    let i = 1;
+    $(gridClass).children('.row').each(function () {
+      $rowLabel = $(`<div class='box label'>${i}</div>`);
+      $(this).prepend($rowLabel);
+      i += 1;
+    });
+  }
+
+  function createColumnLabels(gridClass) {
+    let $columnLabels = $(`<div class='row columnLabels'><div class='box label'></div></div>`);
+    let letters = "ABCDEFGHIJ";
+    for (let i = 0; i < 10; i ++ ) {
+      $label = $(`<div class='box label'>${letters[i]}</div>`);
+      $columnLabels.append($label);
+    }
+    $(`${gridClass} .container-name`).after($columnLabels);
+  }
+
+
   // function to make ships
   function makeShips (shipName) {
     let $box = $("<div class='box ship-box'></div>");
@@ -35,7 +56,11 @@ $(document).ready(function(){
   }
   //create my grid, enemy grid and load ships
   createGrid(".my-grid");
+  createRowLabels(".my-grid");
+  createColumnLabels(".my-grid");
   createGrid(".enemy-grid");
+  createRowLabels(".enemy-grid");
+  createColumnLabels(".enemy-grid");
   loadShips();
 
 

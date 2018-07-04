@@ -33,18 +33,40 @@
   <main class="container">
 
     <div class="grid-container">
+      <div class="ship-lists hidden">
+        <div class="rounded-container my-ships-list">
+          <h6 class="container-name my-ships">my ships</h6>
+          <div class="ship-name hit"><div class="my-ships box carrier"></div>carrier</div>
+          <div class="ship-name"><div class="my-ships box battleship"></div>battleship</div>
+          <div class="ship-name"><div class="my-ships box cruiser"></div>cruiser</div>
+          <div class="ship-name"><div class="my-ships box submarine"></div>submarine</div>
+          <div class="ship-name"><div class="my-ships box destroyer"></div>destroyer</div>
+        </div>
+        <div class="rounded-container enemy-ships-list">
+          <h6 class="container-name enemy-ships">enemy ships</h6>
+          <div class="ship-name hit"><div class="enemy-ships box carrier"></div>carrier</div>
+          <div class="ship-name"><div class="enemy-ships box battleship"></div>battleship</div>
+          <div class="ship-name"><div class="enemy-ships box cruiser"></div>cruiser</div>
+          <div class="ship-name"><div class="enemy-ships box submarine"></div>submarine</div>
+          <div class="ship-name"><div class="enemy-ships box destroyer"></div>destroyer</div>
+        </div>
+      </div>
+
       <div class="rounded-container grid my-grid">
         <h6 class="container-name">my board</h6>
       </div>
+
       <div class="rounded-container grid enemy-grid hidden">
         <h6 class="container-name">enemy board</h6>
       </div>
+
       <div class="rounded-container all-ships">
         <h6 class="container-name">
           ships <button class="reset-ships"><i class="fa fa-refresh"></i></button>
         </h6>
         <div class="place-ship-errors"></div>
       </div>
+
     </div>
     <div class="instructions hidden">
       <p>Click on the enemy board to fire!</p>

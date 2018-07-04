@@ -1,0 +1,14 @@
+.ship-lists {
+  .ship-name {
+    display: flex;
+    flex-direction: row;
+    line-height: 30px;
+    color: darkgrey;
+    &.hit {
+      text-decoration: line-through;
+    }
+    .box {
+      margin-right: 1rem;
+    }
+  }
+}
